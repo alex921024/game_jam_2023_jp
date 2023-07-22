@@ -54,12 +54,6 @@ TagManager:
   - name: Object
     uniqueID: 2537712899
     locked: 0
-  - name: Player
-    uniqueID: 1538331349
-    locked: 0
-  - name: Enemy
-    uniqueID: 553252413
-    locked: 0
   - name: MB
     uniqueID: 2590661447
     locked: 0
@@ -74,4 +68,10 @@ TagManager:
     locked: 0
   - name: Boss
     uniqueID: 2169237509
+    locked: 0
+  - name: Enemy
+    uniqueID: 553252413
+    locked: 0
+  - name: Player
+    uniqueID: 1538331349
     locked: 0

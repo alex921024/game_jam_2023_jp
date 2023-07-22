@@ -43,6 +43,11 @@ public class StraightEnemy : MonoBehaviour
         {
             movingHere = !movingHere;
         }
+        else if (other.gameObject.tag == "Untagged")
+        {
+            movingHere = !movingHere;
+        }
+
 
         if (other.gameObject.tag == "Player"){
             other.gameObject.GetComponent<PlayerStatus>().Damage();
