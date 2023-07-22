@@ -63,14 +63,14 @@ TagManager:
   - name: MB
     uniqueID: 2590661447
     locked: 0
-  - name: special
-    uniqueID: 663942787
-    locked: 0
   - name: Wall
     uniqueID: 1702654041
     locked: 0
   - name: floor
     uniqueID: 3853843395
+    locked: 0
+  - name: special
+    uniqueID: 663942787
     locked: 0
   - name: Boss
     uniqueID: 2169237509
