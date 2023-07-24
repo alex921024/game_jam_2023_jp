@@ -43,6 +43,14 @@ public class StraightEnemy : MonoBehaviour
         {
             movingHere = !movingHere;
         }
+        else if (other.gameObject.tag == "enemy boss")
+        {
+            movingHere = !movingHere;
+        }
+        else if (other.gameObject.tag == "boss")
+        {
+            movingHere = !movingHere;
+        }
         else if (other.gameObject.tag == "Untagged")
         {
             movingHere = !movingHere;
