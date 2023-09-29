@@ -30,9 +30,17 @@ public class Boss : MonoBehaviour
 
     public GameObject KeyUI;
 
+    [Header("Boss難度血量")]
+    public int[] hps = { 2, 3, 4, 5 };
+
+    // 確保 Difficulty.static_mode 在有效範圍內
+    int mode = Mathf.Clamp(Difficulty.static_mode, 0, 3);
+
     private void Start()
     {
-        hp = 5;
+        //Boss血量依照難易度
+        hp = hps[mode];
+
         animator = GetComponent<Animator>();
         dmgCount = 0;
         dieCount = 0;

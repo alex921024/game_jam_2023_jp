@@ -21,6 +21,8 @@ public class SpawnManagerBoss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        initialEnemyAmount = Difficulty.static_nitialEnemyAmount_boss;
+        maxEnemyAmount = Difficulty.static_maxEnemyAmount_boss;
         SpawnEnemy(initialEnemyAmount);
     }
 

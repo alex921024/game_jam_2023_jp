@@ -5,13 +5,28 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float attackRange;
-    public float speed;
+    float attackRange;
+    float speed;
     private GameObject player;
+
+    // 定義攻擊範圍和速度的陣列
+    [Header("敵人偵測範圍")]
+    public int[] attackRanges = { 7, 8, 9, 10 };
+    [Header("敵人速度")]
+    public float[] speeds = { 5f, 5.5f, 6f, 6.5f };
+
+    // 確保 Difficulty.static_mode 在有效範圍內
+    int mode = Mathf.Clamp(Difficulty.static_mode, 0, 3);
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+
+        // 設定攻擊範圍和速度
+        attackRange = attackRanges[mode];
+        speed = speeds[mode];
+
     }
 
     // Update is called once per frame

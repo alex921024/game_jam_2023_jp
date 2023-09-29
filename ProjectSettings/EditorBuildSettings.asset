@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CHI/Scenes/Saikai.unity
     guid: 78b9130d7704943339e315c2419864f2
+  - enabled: 1
+    path: Assets/CHI/Scenes/Difficulty.unity
+    guid: aefa52b8dcfed43de9c9235e6c534c08
   m_configObjects: {}
